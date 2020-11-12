@@ -1,0 +1,2264 @@
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.main-container {
+  background-color: #f7f8f8;
+}
+
+.about-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/image/img_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.about-title-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title {
+  width: 650px;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.about-welcome-con {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.welcome-box {
+  width: 50vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.welcome-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+  width: 30vw;
+}
+
+.welcome-paragraph {
+  width: 30vw;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6c757d;
+}
+
+.welcome-paragraph2 {
+  color: #949494;
+  font-size: 16px;
+  width: 30vw;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+.welcome-buttons {
+  margin-top: 30px;
+}
+
+.button-read {
+  width: 150px;
+  border: none;
+  transition: 1s;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+}
+
+.button-read:hover {
+  opacity: 0.5;
+}
+
+.button-read:focus {
+  outline: none;
+}
+
+.welcome-link {
+  color: #f77b7b;
+  margin-left: 20px;
+}
+
+.welcome-link:hover {
+  color: #a18d6d;
+  text-decoration: none;
+}
+
+span {
+  color: #6e6e6e;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.welcome-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-testimonial {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-testimonial-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+  text-align: center;
+}
+
+.testimonial-car-box {
+  width: 80vw;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-comments {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.testimonial-parag-img {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-img1 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.test-img2 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.test-img3 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.testimonial-parag {
+  width: 250px;
+  height: fit-content;
+  text-align: center;
+  color: #2f2f2f;
+  font-size: 20px;
+  font-family: "Playfair+Display", times, serif;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.testimonial-nick {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: italic;
+  color: #6c757d;
+  line-height: 29px;
+}
+
+.testimonial-pre, .testimonial-next {
+  margin-right: -50px;
+  margin-left: -50px;
+}
+
+.box-reserve {
+  height: fit-content;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-items: center;
+}
+
+.mini-box-reserve {
+  width: 80vw;
+  margin: 130px 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserve-paragraph {
+  font-family: "Playfair+Display", times, serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 38px;
+  font-style: normal;
+  width: 500px;
+}
+
+.reserve-button {
+  width: 180px;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+  border: none;
+}
+
+.reserve-button:focus {
+  outline: none;
+}
+
+.reserve-button:hover {
+  opacity: 0.5;
+}
+
+footer {
+  width: 100vw;
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  padding: 100px;
+}
+
+.home-footer-container {
+  height: fit-content;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-footer-main {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-list1 {
+  list-style: none;
+}
+.footer-list1 li {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: -28px;
+  cursor: pointer;
+}
+.footer-list1 li:hover {
+  color: white;
+}
+
+.footer-list2 {
+  list-style: none;
+}
+.footer-list2 li {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.footer-list2 li:hover {
+  color: white;
+}
+
+.address-footer {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: italic;
+}
+.address-footer i {
+  color: #fd7e14;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.address-paragraph {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  width: 220px;
+}
+
+.sign-up {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-icons {
+  margin-top: 10px;
+  width: 200px;
+}
+.input-icons i {
+  position: absolute;
+  margin-left: 180px;
+  color: white;
+}
+.input-icons .input-field {
+  border: none;
+  background-color: black;
+  border-bottom: 1px solid rgba(145, 131, 131, 0.5);
+  width: 100%;
+  outline: none;
+  color: white;
+}
+.input-icons .input-field:hover {
+  border-bottom: 1px solid white;
+}
+.input-icons .input-field:focus {
+  outline: none;
+}
+.input-icons ::placeholder {
+  font-weight: "Mukta Mahee", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.home-footer-main2 {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  border-top: 1px solid grey;
+}
+.home-footer-main2 .footer-end {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 40px;
+}
+.home-footer-main2 .footer-end .fa {
+  color: #f53c3c;
+}
+.home-footer-main2 .footer-end .colorlib {
+  color: #a1b191;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  transition: 0.5s;
+}
+.home-footer-main2 .footer-end .colorlib:hover {
+  color: white;
+}
+
+.footer-icon {
+  margin-top: 40px;
+}
+.footer-icon a {
+  color: #bbbbbb;
+  font-size: 18px;
+  margin-left: 8px;
+}
+.footer-icon a:hover {
+  color: white;
+}
+
+.main-container {
+  background-color: #f7f8f8;
+}
+
+.room-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/image/alex-block-607886-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.room-title-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-title {
+  width: 650px;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.contact {
+  width: 100vw;
+  height: fit-content;
+  background-color: white;
+  padding: 150px 0;
+}
+
+.contact-form {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.contact-main-blog {
+  border: 1px solid grey;
+  width: 58%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 38px;
+}
+
+.contact-main-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name-phone {
+  width: 48%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #6c757d;
+}
+
+.input-name {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  font-size: 22px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  color: black;
+  border: 1.5px solid #6c757d;
+  margin-bottom: 15px;
+}
+
+.input-name:focus {
+  outline: none;
+  border: 1px solid #fd7e14;
+}
+
+.name-phone2 {
+  width: 48%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.input-phone {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  font-size: 22px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  color: black;
+  border: 1.5px solid #6c757d;
+}
+
+.input-phone:focus {
+  outline: none;
+  border: 1px solid #fd7e14;
+}
+
+.contact-email {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #6c757d;
+  margin: 15px 0;
+}
+
+.input-email {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  font-size: 22px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  color: black;
+  border: 1.5px solid #6c757d;
+}
+
+.input-email:focus {
+  outline: none;
+  border: 1px solid #fd7e14;
+}
+
+.contact-message-box {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #6c757d;
+  margin: 15px 0;
+}
+
+.input-message {
+  width: 100%;
+  outline: none;
+  font-size: 22px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  color: black;
+  border: 1.5px solid #6c757d;
+}
+
+.input-message:focus {
+  outline: none;
+  border: 1px solid #fd7e14;
+}
+
+.contact-blog-button {
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+  width: 150px;
+  border: none;
+  margin-top: 20px;
+}
+
+.contact-blog-button:hover {
+  background-color: #cf6d1d;
+  color: black;
+}
+
+.contact-mini-blog {
+  width: 32%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-address1 {
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #6c757d;
+  margin: 15px 0;
+}
+
+.contact-address2 {
+  font-size: 30px;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "Playfair+Display", times, serif;
+  color: #6c757d;
+  margin-top: -13px;
+  margin-bottom: 10px;
+}
+
+.contact-phone1 {
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #6c757d;
+  margin: 15px 0;
+}
+
+.contact-phone2 {
+  font-size: 30px;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "Playfair+Display", times, serif;
+  color: #6c757d;
+  margin-top: -13px;
+  margin-bottom: 10px;
+}
+
+.contact-email1 {
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #6c757d;
+  margin: 15px 0;
+}
+
+.contact-email2 {
+  font-size: 30px;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "Playfair+Display", times, serif;
+  color: #6c757d;
+  margin-top: -13px;
+  margin-bottom: 10px;
+}
+
+.contact-testimonial {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.main-container {
+  background-color: #f7f8f8;
+}
+
+.events-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/image/slider-7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.home-title-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  width: 650px;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.event-main-box {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.event-box {
+  width: 65%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-column-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.category-box {
+  width: 48%;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 8px #e0dbdb;
+}
+
+.category-box:hover {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
+}
+
+.event-mini-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box {
+  background-color: white;
+  height: fit-content;
+  padding: 5px 5px;
+}
+
+.search-box-mini {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+}
+.search-box-mini i {
+  position: absolute;
+  font-size: 22px;
+  color: #6c757d;
+  margin-left: 8px;
+}
+.search-box-mini ::placeholder {
+  color: #6c757d;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.event-search {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+}
+
+.event-search:hover {
+  border: 1px solid black;
+}
+
+.event-search:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.popular-post {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.link-event {
+  text-decoration: none;
+}
+
+.popular-title {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+  line-height: 22px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.popular-box {
+  width: 90%;
+  margin-left: 30px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.popular-img {
+  width: 28%;
+  height: 60px;
+  object-fit: cover;
+}
+
+.date-paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.popular-date {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 100;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  color: #adb5bd;
+}
+
+.popular-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+}
+
+.event-category {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: #000000;
+  line-height: 22px;
+  margin-left: 30px;
+  margin-top: 25px;
+  padding-bottom: 30px;
+}
+
+.event-list {
+  width: 80%;
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+}
+.event-list li {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.event-list-link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: #ff9843;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.event-list-link span {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: #6c757d;
+}
+
+.event-list-link:hover {
+  text-decoration: none;
+  color: #c35a02;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.main-container {
+  background-color: #f7f8f8;
+}
+
+.home-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/image/hotel_interior_furniture_design_hallway_107062_1280x720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.home-title-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  width: 650px;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.home-form {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8f8;
+}
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 150px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
+  margin-bottom: 100px;
+}
+
+.primary-heading {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+}
+
+.booking-check {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  color: black;
+  font-weight: 600;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.booking-input {
+  background-color: white;
+  border: 1.5px solid #c5c5c5;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  outline: none;
+}
+
+select {
+  background-color: white;
+  border: 1.5px solid #c5c5c5;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  outline: none;
+}
+
+.Home-form-btn {
+  width: 300px;
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: none;
+  transition: 1s;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+}
+
+.Home-form-btn:hover {
+  opacity: 0.5;
+}
+
+.Home-form-btn:focus {
+  outline: none;
+}
+
+.home-welcome-con {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+}
+
+.welcome-box {
+  width: 50vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.welcome-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+  width: 30vw;
+}
+
+.welcome-paragraph {
+  width: 30vw;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6c757d;
+}
+
+.welcome-paragraph2 {
+  color: #949494;
+  font-size: 16px;
+  width: 30vw;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+.welcome-buttons {
+  margin-top: 30px;
+}
+
+.button-read {
+  width: 150px;
+  border: none;
+  transition: 1s;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+}
+
+.button-read:hover {
+  opacity: 0.5;
+}
+
+.button-read:focus {
+  outline: none;
+}
+
+.welcome-link {
+  color: #f77b7b;
+  margin-left: 20px;
+}
+
+.welcome-link:hover {
+  color: #a18d6d;
+  text-decoration: none;
+}
+
+span {
+  color: #6e6e6e;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.welcome-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-offers {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.offer-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+  margin-top: 100px;
+}
+
+.offers-paragraph {
+  width: 50vw;
+  text-align: center;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6c757d;
+  margin-bottom: 80px;
+}
+
+.offers-room {
+  width: 90vw;
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-offer {
+  height: fit-content;
+}
+
+.img-offer1 {
+  width: 45vw;
+  height: 650px;
+  object-fit: cover;
+}
+
+.offers-room-cont {
+  width: 37vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.room-title {
+  font-size: 32px;
+  color: black;
+  font-family: "Playfair+Display", times, serif;
+  font-family: 500;
+  line-height: 38px;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.offer-cost {
+  color: #fd7e14;
+  font-size: 30px;
+}
+
+.room-paragraph {
+  width: 33vw;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6c757d;
+}
+
+.room-paragraph2 {
+  color: #949494;
+  font-size: 16px;
+  width: 30vw;
+  line-height: 30px;
+}
+
+.offer-button {
+  width: 150px;
+  border: none;
+  transition: 1s;
+  margin-top: 20px;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+}
+
+.offer-button:focus {
+  outline: none;
+}
+
+.offer-button:hover {
+  opacity: 0.5;
+}
+
+.main-offer-button {
+  width: 300px;
+  border: none;
+  transition: 1s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+}
+
+.main-offer-button:focus {
+  outline: none;
+}
+
+.main-offer-button:hover {
+  opacity: 0.5;
+}
+
+.home-gallery {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+}
+
+.galery-title-parag {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.gallery-title {
+  width: 490px;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+}
+
+.gallery-paragraph {
+  width: 600px;
+  text-align: center;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6c757d;
+}
+
+.carousel-box {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-r {
+  width: 80vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.icon-carousel-pre, .icon-carousel-next {
+  margin-left: -120px;
+  margin-right: -120px;
+}
+
+.gallery-link {
+  width: fit-content;
+  text-align: center;
+  margin: 100px 0;
+}
+
+.link-video {
+  color: #fd7e14;
+  font-size: 16px;
+}
+
+.link-video:hover {
+  color: #a18d6d;
+  text-decoration: none;
+}
+
+.testimonial-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.testimonial-car-box {
+  width: 80vw;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-comments {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.testimonial-parag-img {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-img1 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.test-img2 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.test-img3 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.testimonial-parag {
+  width: 250px;
+  height: fit-content;
+  text-align: center;
+  color: #2f2f2f;
+  font-size: 20px;
+  font-family: "Playfair+Display", times, serif;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.testimonial-nick {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: italic;
+  color: #6c757d;
+  line-height: 29px;
+}
+
+.testimonial-pre, .testimonial-next {
+  margin-right: -50px;
+  margin-left: -50px;
+}
+
+.home-events {
+  width: 100vw;
+  height: fit-content;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #aca7a7;
+}
+
+.event-main-container {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.event-title-paragraph {
+  width: 750px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+}
+
+.event-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+  text-align: center;
+}
+
+.event-paragraph {
+  text-align: center;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+.event-gallery-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.event-gallery-small-con {
+  width: 31%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 8px #e0dbdb;
+}
+
+.event-gallery-small-con:hover {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
+}
+
+.event-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-date {
+  width: 40%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  color: #ced4da;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.event-paragraph2 {
+  width: 85%;
+  margin-left: 30px;
+}
+
+.link-event {
+  color: black;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.link-event:hover {
+  color: #fd7e14;
+  text-decoration: none;
+}
+
+.box-reserve {
+  height: fit-content;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-items: center;
+}
+
+.mini-box-reserve {
+  width: 80vw;
+  margin: 130px 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserve-paragraph {
+  font-family: "Playfair+Display", times, serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 38px;
+  font-style: normal;
+  width: 500px;
+}
+
+.reserve-button {
+  width: 180px;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+  border: none;
+}
+
+.reserve-button:focus {
+  outline: none;
+}
+
+.reserve-button:hover {
+  opacity: 0.5;
+}
+
+footer {
+  width: 100vw;
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  padding: 100px;
+}
+
+.home-footer-container {
+  height: fit-content;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-footer-main {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-list1 {
+  list-style: none;
+}
+.footer-list1 li {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: -28px;
+  cursor: pointer;
+}
+.footer-list1 li:hover {
+  color: white;
+}
+
+.footer-list2 {
+  list-style: none;
+}
+.footer-list2 li {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.footer-list2 li:hover {
+  color: white;
+}
+
+.address-footer {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: italic;
+}
+.address-footer i {
+  color: #fd7e14;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.address-paragraph {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  width: 220px;
+}
+
+.sign-up {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-icons {
+  margin-top: 10px;
+  width: 200px;
+}
+.input-icons i {
+  position: absolute;
+  margin-left: 180px;
+  color: white;
+}
+.input-icons .input-field {
+  border: none;
+  background-color: black;
+  border-bottom: 1px solid rgba(145, 131, 131, 0.5);
+  width: 100%;
+  outline: none;
+  color: white;
+}
+.input-icons .input-field:hover {
+  border-bottom: 1px solid white;
+}
+.input-icons .input-field:focus {
+  outline: none;
+}
+.input-icons ::placeholder {
+  font-weight: "Mukta Mahee", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.home-footer-main2 {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  border-top: 1px solid grey;
+}
+.home-footer-main2 .footer-end {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 40px;
+}
+.home-footer-main2 .footer-end .fa {
+  color: #f53c3c;
+}
+.home-footer-main2 .footer-end .colorlib {
+  color: #a1b191;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  transition: 0.5s;
+}
+.home-footer-main2 .footer-end .colorlib:hover {
+  color: white;
+}
+
+.footer-icon {
+  margin-top: 40px;
+}
+.footer-icon a {
+  color: #bbbbbb;
+  font-size: 18px;
+  margin-left: 8px;
+}
+.footer-icon a:hover {
+  color: white;
+}
+
+.main-container {
+  background-color: #f7f8f8;
+}
+
+.reservation-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/image/img_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.home-title-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  width: 650px;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.reservation-phone {
+  width: 48%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  margin-top: 18px;
+}
+
+.reservation-phone2 {
+  width: 48%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  margin-top: 18px;
+}
+
+.reservation-email {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reservation-message-box {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 18px;
+}
+
+.reservation-testimonial {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.main-container {
+  background-color: #f7f8f8;
+}
+
+.rome-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/image/img_5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.home-title-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rome-title {
+  width: 650px;
+  font-size: 90px;
+  font-weight: 600;
+  color: white;
+  font-style: italic;
+}
+
+.rooms-offer {
+  margin-top: 100px;
+  margin-bottom: 180px;
+}
+
+.offers-room {
+  width: 90vw;
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-offer {
+  height: fit-content;
+}
+
+.img-offer1 {
+  width: 45vw;
+  height: 650px;
+  object-fit: cover;
+}
+
+.offers-room-cont {
+  width: 37vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.room-title {
+  font-size: 32px;
+  color: black;
+  font-family: "Playfair+Display", times, serif;
+  font-family: 500;
+  font-style: normal;
+  margin-bottom: 20px;
+  line-height: 38px;
+}
+
+.offer-cost {
+  color: #fd7e14;
+  font-size: 30px;
+}
+
+.room-paragraph {
+  width: 33vw;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6c757d;
+}
+
+.room-paragraph2 {
+  color: #949494;
+  font-size: 16px;
+  width: 30vw;
+  line-height: 30px;
+}
+
+.offer-button {
+  width: 150px;
+  border: none;
+  transition: 1s;
+  margin-top: 20px;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+}
+
+.offer-button:focus {
+  outline: none;
+}
+
+.offer-button:hover {
+  opacity: 0.5;
+}
+
+.room-testimonial {
+  background-color: white;
+  border-bottom: 1px solid #b6b2b2;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.room-testimonial-title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Playfair+Display", times, serif;
+  color: #000000;
+  font-style: normal;
+  line-height: 72px;
+  text-align: center;
+}
+
+.testimonial-car-box {
+  width: 80vw;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-comments {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.testimonial-parag-img {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-img1 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.test-img2 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.test-img3 {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.testimonial-parag {
+  width: 250px;
+  height: fit-content;
+  text-align: center;
+  color: #2f2f2f;
+  font-size: 20px;
+  font-family: "Playfair+Display", times, serif;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.testimonial-nick {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: italic;
+  color: #6c757d;
+  line-height: 29px;
+}
+
+.testimonial-pre, .testimonial-next {
+  margin-right: -50px;
+  margin-left: -50px;
+}
+
+.box-reserve {
+  height: fit-content;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-items: center;
+}
+
+.mini-box-reserve {
+  width: 80vw;
+  margin: 130px 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserve-paragraph {
+  font-family: "Playfair+Display", times, serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 38px;
+  font-style: normal;
+  width: 500px;
+}
+
+.reserve-button {
+  width: 180px;
+  background-color: #fd7e14;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  border-radius: 20px;
+  height: 47px;
+  border: none;
+}
+
+.reserve-button:focus {
+  outline: none;
+}
+
+.reserve-button:hover {
+  opacity: 0.5;
+}
+
+footer {
+  width: 100vw;
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  padding: 100px;
+}
+
+.home-footer-container {
+  height: fit-content;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-footer-main {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-list1 {
+  list-style: none;
+}
+.footer-list1 li {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: -28px;
+  cursor: pointer;
+}
+.footer-list1 li:hover {
+  color: white;
+}
+
+.footer-list2 {
+  list-style: none;
+}
+.footer-list2 li {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.footer-list2 li:hover {
+  color: white;
+}
+
+.address-footer {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: italic;
+}
+.address-footer i {
+  color: #fd7e14;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.address-paragraph {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  width: 220px;
+}
+
+.sign-up {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-icons {
+  margin-top: 10px;
+  width: 200px;
+}
+.input-icons i {
+  position: absolute;
+  margin-left: 180px;
+  color: white;
+}
+.input-icons .input-field {
+  border: none;
+  background-color: black;
+  border-bottom: 1px solid rgba(145, 131, 131, 0.5);
+  width: 100%;
+  outline: none;
+  color: white;
+}
+.input-icons .input-field:hover {
+  border-bottom: 1px solid white;
+}
+.input-icons .input-field:focus {
+  outline: none;
+}
+.input-icons ::placeholder {
+  font-weight: "Mukta Mahee", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.home-footer-main2 {
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  border-top: 1px solid grey;
+}
+.home-footer-main2 .footer-end {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 40px;
+}
+.home-footer-main2 .footer-end .fa {
+  color: #f53c3c;
+}
+.home-footer-main2 .footer-end .colorlib {
+  color: #a1b191;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: normal;
+  transition: 0.5s;
+}
+.home-footer-main2 .footer-end .colorlib:hover {
+  color: white;
+}
+
+.footer-icon {
+  margin-top: 40px;
+}
+.footer-icon a {
+  color: #bbbbbb;
+  font-size: 18px;
+  margin-left: 8px;
+}
+.footer-icon a:hover {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,392 @@
+@mixin test-paragraph {
+    color:rgb(47,47,47);
+    font-size: 20px;
+    font-family: "Playfair+Display", times, serif;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 30px;  
+}
+@mixin paragraph {
+    font-family:"Mukta Mahee", arial, sans-serif; 
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #6c757d;   
+}
+@mixin button {
+    background-color:rgb(253,126,20) ;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color:#ffffff;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    border-radius: 20px;
+    height: 47px; 
+}
+@mixin title {
+    font-size:60px ;
+    font-weight:400 ;
+    font-family:"Playfair+Display", times, serif ; 
+    color:#000000 ;
+    font-style: normal;
+    line-height: 72px;
+}
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.main-container{
+    background-color: rgb(247, 248, 248); 
+}
+.about-header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411) ), url(../../assets/image/img_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.about-title-btn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.about-title{
+    width: 650px;
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-style: italic;   
+}
+.about-welcome-con{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 0 auto;
+    background-color:rgb(255, 255, 255) ;
+    
+}
+.welcome-box{
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-flow:column;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+.welcome-title{
+    @include title();
+    width: 30vw;
+}
+.welcome-paragraph{
+    width:30vw;
+    @include paragraph()
+}
+.welcome-paragraph2{
+    color:  rgb(148, 148, 148) ;
+    font-size: 16px;
+    width:30vw;
+    line-height: 30px;
+    margin-top: 35px;
+}
+.welcome-buttons{
+    margin-top: 30px;
+}
+.button-read{
+    width: 150px;
+    border: none;
+    transition: 1s;
+    @include button()
+}
+.button-read:hover{
+    opacity: 0.5;
+}
+.button-read:focus{
+    outline: none;
+}
+.welcome-link{
+    color: rgb(247, 123, 123);
+    margin-left: 20px; 
+}
+.welcome-link:hover{
+    color: rgb(161, 141, 109);
+    text-decoration: none;
+}
+span{
+    color: rgb(110, 110, 110);
+    margin-left: 10px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+.welcome-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-testimonial{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.about-testimonial-title{
+    @include title();
+    text-align: center;
+}
+.testimonial-car-box{
+    width: 80vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-comments{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.testimonial-parag-img{
+    width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.test-img1{
+    width: 80px;
+    border-radius: 100%;
+}
+.test-img2{
+    width: 80px;
+    border-radius: 100%;
+}
+.test-img3{
+    width: 80px;
+    border-radius: 100%;
+}
+.testimonial-parag{
+    width: 250px;
+    height: fit-content;
+    text-align: center;
+    @include test-paragraph()
+}
+.testimonial-nick{
+    font-size:16px ;
+    font-weight: 200;
+    font-family:"Mukta Mahee", arial, sans-serif; 
+    font-style: italic;
+    color:#6c757d ;
+    line-height: 29px;
+}
+.testimonial-pre,.testimonial-next{
+    margin-right: -50px;
+    margin-left: -50px;
+}
+
+.box-reserve{
+    height: fit-content;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-items: center;
+    
+}
+.mini-box-reserve{
+    width: 80vw;
+    margin:130px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.reserve-paragraph{
+    font-family: "Playfair+Display", times, serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 38px;
+    font-style: normal;
+    width: 500px;
+}
+.reserve-button{
+    width: 180px;
+    @include button();
+    border:none;
+}
+.reserve-button:focus{
+    outline: none;
+}
+.reserve-button:hover{
+    opacity: 0.5;
+}
+footer{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 100px;
+}
+.home-footer-container{
+    height: fit-content;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.home-footer-main{
+    width: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-list1{
+    list-style: none;
+    li{
+        font-size:16px ;
+        font-weight:200 ;
+        font-family:"Mukta Mahee", arial, sans-serif; ;
+        font-style:normal ;
+        margin-bottom: 8px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: -28px;
+        cursor: pointer;
+    }
+    li:hover{
+        color: white;
+    }
+}
+.footer-list2{
+    list-style: none;
+    li{
+        font-size:16px ;
+        font-weight:200 ;
+        font-family:"Mukta Mahee", arial, sans-serif; ;
+        font-style:normal ;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 8px;
+        cursor: pointer;   
+    }
+    li:hover{
+        color: white;
+    }
+}
+.address-footer{
+    color: white;
+    font-size:16px ;
+    font-weight:200 ;
+    font-family:"Mukta Mahee", arial, sans-serif; ;
+    font-style:italic ;
+    i{
+        color: rgb(253,126,20);
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+.address-paragraph{
+    font-size:16px ;
+    font-weight:200 ;
+    font-family:"Mukta Mahee", arial, sans-serif; ;
+    font-style:normal ;
+    color: rgba(255, 255, 255, 0.5);
+    width: 220px;
+    
+}
+.sign-up{
+    font-size:16px ;
+    font-weight:200 ;
+    font-family:"Mukta Mahee", arial, sans-serif; ;
+    font-style:normal ;
+    color: rgba(255, 255, 255, 0.5);
+}
+.input-icons{
+    margin-top: 10px;
+    width: 200px;
+  
+    i{
+        position: absolute;
+        margin-left: 180px;
+        color: white;
+    }
+
+    .input-field{
+        border: none;
+        background-color: black;
+        border-bottom: 1px solid  rgba(145, 131, 131, 0.5) ;
+        width: 100%;
+        outline: none;
+        color: white;
+    }
+    .input-field:hover{
+        border-bottom:1px solid rgb(255, 255, 255);
+    }
+    .input-field:focus{
+        outline: none;
+    }
+    ::placeholder{
+        font-weight: "Mukta Mahee", arial, sans-serif;
+        font-size:16px ;
+        font-weight:400;
+        font-style: italic;
+    }
+}
+.home-footer-main2{
+    width: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 1px solid grey;
+    .footer-end{
+        font-size:16px ;
+        font-weight:200 ;
+        font-family:"Mukta Mahee", arial, sans-serif; ;
+        font-style:normal ;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 40px;
+        .fa{
+            color: rgb(245, 60, 60);
+        }
+        .colorlib{
+          color: rgb(161,177,145) ;
+          font-size:16px ;
+          font-weight:200 ; 
+          font-family:"Mukta Mahee", arial, sans-serif; ;
+          font-style:normal ;
+          transition: 0.5s;
+        } 
+        .colorlib:hover{
+            color: white;
+        } 
+    }
+}
+.footer-icon{
+    margin-top: 40px;
+    a{
+        color: rgb(187,187,187);
+        font-size: 18px;
+        margin-left: 8px; 
+    }
+    a:hover{
+        color: white;
+    }
+}

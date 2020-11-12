@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.main-container {
+  background-color: #f7f8f8;
+}
+
+.home-header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/image/hotel_interior_furniture_design_hallway_107062_1280x720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.home-title-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  width: 650px;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-bottom: 240px;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.home-scroll-btn-point {
+  width: 40px;
+  height: 60px;
+  color: white;
+  font-weight: 350;
+  font-size: 35px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 3px solid white;
+  margin-bottom: 44px;
+  text-align: center;
+  outline-style: none;
+  transition: 1s;
+}
+
+.home-scroll-btn-point:focus {
+  outline: none;
+}
+
+.home-scroll-btn-point:hover {
+  opacity: 0.5;
+}
+
+.home-form {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8f8;
+}
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 150px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
+}
+
+.primary-heading {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  font-size: 80px;
+  color: black;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.booking-check {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  color: black;
+  font-weight: 600;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+input {
+  background-color: white;
+  border: 1.5px solid #c5c5c5;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  outline: none;
+}
+
+select {
+  background-color: white;
+  border: 1.5px solid #c5c5c5;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  outline: none;
+}
+
+.Home-form-btn {
+  width: 300px;
+  height: 47px;
+  background-color: #fd7e14;
+  border-radius: 20px;
+  color: white;
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: none;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+  transition: 1s;
+}
+
+.Home-form-btn:hover {
+  opacity: 0.5;
+}
+
+.Home-form-btn:focus {
+  outline: none;
+}
+
+.home-welcome-con {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+}
+
+.welcome-box {
+  width: 50vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.welcome-title {
+  font-size: 70px;
+  color: black;
+  font-family: "Roboto Slab", serif;
+  line-height: 100px;
+}
+
+.welcome-paragraph {
+  color: #858383;
+  font-size: 20px;
+  width: 30vw;
+  line-height: 30px;
+}
+
+.welcome-paragraph2 {
+  color: #949494;
+  font-size: 16px;
+  width: 30vw;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+.welcome-buttons {
+  margin-top: 30px;
+}
+
+.button-read {
+  width: 150px;
+  height: 47px;
+  background-color: #fd7e14;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  transition: 1s;
+}
+
+.button-read:hover {
+  opacity: 0.5;
+}
+
+.button-read:focus {
+  outline: none;
+}
+
+.a {
+  color: #f77b7b;
+  margin-left: 20px;
+}
+
+span {
+  color: #6e6e6e;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+
+.welcome-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-offers {
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.offer-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.offers-title {
+  font-size: 70px;
+  color: black;
+  font-family: "Roboto Slab", serif;
+  margin-top: 100px;
+}
+
+.offers-paragraph {
+  width: 50vw;
+  text-align: center;
+  line-height: 35px;
+  color: #858383;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+}
+
+.offers-room {
+  width: 90vw;
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-offer {
+  height: fit-content;
+}
+
+.img-offer1 {
+  width: 45vw;
+  height: 650px;
+  object-fit: cover;
+}
+
+.offers-room-cont {
+  width: 37vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.room-title {
+  font-size: 40px;
+  color: black;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #fd7e14;
+  font-size: 30px;
+}
+
+.room-paragraph {
+  color: #757373;
+  font-size: 20px;
+  width: 33vw;
+  line-height: 30px;
+}
+
+.room-paragraph2 {
+  color: #949494;
+  font-size: 16px;
+  width: 30vw;
+  line-height: 30px;
+}
+
+.offer-button {
+  width: 150px;
+  height: 47px;
+  background-color: #fd7e14;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  transition: 1s;
+  margin-top: 20px;
+}
+
+.offer-button:focus {
+  opacity: 0.5;
+}
+
+.main-offer-button {
+  width: 300px;
+  height: 47px;
+  background-color: #fd7e14;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-family: "Mukta", sans-serif;
+  font-family: "Roboto Slab", serif;
+  transition: 1s;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.scc.map */

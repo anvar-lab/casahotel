@@ -1,0 +1,693 @@
+//veraibles
+$title-font-family: 'Roboto Slab', serif;
+$title-font-size: 80px;
+@mixin test-paragraph {
+    color:rgb(47,47,47);
+    font-size: 20px;
+    font-family: "Playfair+Display", times, serif;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 30px;  
+}
+@mixin paragraph {
+    font-family:"Mukta Mahee", arial, sans-serif; 
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #6c757d;   
+}
+@mixin button {
+    background-color:rgb(253,126,20) ;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    color:#ffffff;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    border-radius: 20px;
+    height: 47px; 
+}
+@mixin title {
+    font-size:60px ;
+    font-weight:400 ;
+    font-family:"Playfair+Display", times, serif ; 
+    color:#000000 ;
+    font-style: normal;
+    line-height: 72px;
+}
+
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.main-container{
+    background-color: rgb(247, 248, 248); 
+}
+.home-header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411) ), url(../../assets/image/hotel_interior_furniture_design_hallway_107062_1280x720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.home-title-btn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.home-title{
+    width: 650px;
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-style: italic;   
+}
+.home-form{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 248, 248); 
+}
+.booking-form{
+    display: flex;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    height: 150px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    box-shadow: 1px 1px 8px rgba(0, 0,0,  0.228) ;
+    margin-bottom: 100px;
+}
+.primary-heading{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+    @include title()
+}
+.booking-check{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto Slab', serif;  
+}
+.booking-input{
+    background-color: white;
+    border: 1.5px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    outline: none;    
+}
+select{
+    background-color: white;
+    border: 1.5px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    outline: none;
+}
+.Home-form-btn{
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: none;
+    transition: 1s;
+    @include button() 
+}
+.Home-form-btn:hover{
+    opacity: 0.5;
+}
+.Home-form-btn:focus{
+    outline: none;
+}
+.home-welcome-con{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    background-color:rgb(255, 255, 255) ;
+    
+}
+.welcome-box{
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-flow:column;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+.welcome-title{
+    @include title();
+    width: 30vw;
+}
+.welcome-paragraph{
+    width:30vw;
+    @include paragraph()
+}
+.welcome-paragraph2{
+    color:  rgb(148, 148, 148) ;
+    font-size: 16px;
+    width:30vw;
+    line-height: 30px;
+    margin-top: 35px;
+}
+.welcome-buttons{
+    margin-top: 30px;
+}
+.button-read{
+    width: 150px;
+    border: none;
+    transition: 1s;
+    @include button()
+}
+.button-read:hover{
+    opacity: 0.5;
+}
+.button-read:focus{
+    outline: none;
+}
+.welcome-link{
+    color: rgb(247, 123, 123);
+    margin-left: 20px; 
+}
+.welcome-link:hover{
+    color: rgb(161, 141, 109);
+    text-decoration: none;
+}
+span{
+    color: rgb(110, 110, 110);
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: $title-font-family; 
+}
+.welcome-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-offers{
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-flow: column; 
+}
+.offer-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.offers-title{
+    @include title();
+    margin-top: 100px;
+}
+.offers-paragraph{
+    width: 50vw;
+    text-align: center;
+    @include paragraph();
+    margin-bottom: 80px;
+}
+.offers-room{
+    width: 90vw;
+    display: flex;
+    flex-flow: row;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-offer{
+    height: fit-content;
+}
+.img-offer1{
+    width: 45vw;
+    height: 650px;
+    object-fit: cover;
+}
+.offers-room-cont{
+    width: 37vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px; 
+}
+.room-title{
+    font-size: 32px;
+    color: black;
+    font-family: "Playfair+Display", times, serif;
+    font-family: 500;
+    line-height: 38px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.offer-cost{
+    color:rgb(253,126,20);
+    font-size: 30px;
+}
+.room-paragraph{
+    width:33vw;
+    @include paragraph()
+}
+.room-paragraph2{
+    color:  rgb(148, 148, 148) ;
+    font-size: 16px;
+    width:30vw;
+    line-height: 30px;
+}
+.offer-button{
+    width: 150px;
+    border: none;
+    transition: 1s;
+    margin-top: 20px;
+    @include button()
+}
+.offer-button:focus{
+    outline: none;
+}
+.offer-button:hover{
+    opacity: 0.5;
+}
+.main-offer-button{
+    width: 300px;
+    border: none;
+    transition: 1s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    @include button()
+}
+.main-offer-button:focus{
+    outline: none;
+}
+.main-offer-button:hover{
+    opacity: 0.5;
+}
+.home-gallery{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+.galery-title-parag{
+    margin:100px 0;
+    text-align: center;
+}
+.gallery-title{
+    width: 490px;
+    @include title()
+}
+.gallery-paragraph{
+    width: 600px;
+    text-align: center;
+    @include paragraph()  
+}
+.carousel-box{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-r{
+    width: 80vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.icon-carousel-pre,.icon-carousel-next{
+    margin-left: -120px;
+    margin-right: -120px;
+}
+.gallery-link{
+    width: fit-content;
+    text-align: center;
+    margin:100px 0;  
+}
+.link-video{
+    color: rgb(253,126,20);
+    font-size: 16px;
+}
+.link-video:hover{
+    color: rgb(161, 141, 109);
+    text-decoration: none;
+}
+.testimonial-title{
+    @include title();
+    margin-top: 50px;
+    text-align: center;
+}
+.testimonial-car-box{
+    width: 80vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-comments{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.testimonial-parag-img{
+    width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.test-img1{
+    width: 80px;
+    border-radius: 100%;
+}
+.test-img2{
+    width: 80px;
+    border-radius: 100%;
+}
+.test-img3{
+    width: 80px;
+    border-radius: 100%;
+}
+.testimonial-parag{
+    width: 250px;
+    height: fit-content;
+    text-align: center;
+    @include test-paragraph()
+}
+.testimonial-nick{
+    font-size:16px ;
+    font-weight: 200;
+    font-family:"Mukta Mahee", arial, sans-serif; 
+    font-style: italic;
+    color:#6c757d ;
+    line-height: 29px;
+}
+.testimonial-pre,.testimonial-next{
+    margin-right: -50px;
+    margin-left: -50px;
+}
+.home-events{
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgb(172, 167, 167);
+}
+.event-main-container{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.event-title-paragraph{
+    width: 750px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 120px;
+}
+.event-title{
+    @include title();
+    text-align: center;
+}
+.event-paragraph{
+    text-align: center;
+    @include paragraph();
+    margin-top: 20px;
+}
+.event-gallery-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.event-gallery-small-con{
+    width: 31%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow:1px 1px 8px rgb(224, 219, 219) ;
+}
+.event-gallery-small-con:hover{
+    box-shadow: 1px 1px 8px rgba(0, 0,0,  0.228) ;
+}
+.event-img{
+    width: 100%;
+    object-fit: cover;
+}
+.event-date{
+    width: 40%;
+    font-size:16px ;
+    font-style: normal;
+    font-weight:200 ;
+    font-family:"Mukta Mahee", arial, sans-serif ;
+    color:#ced4da ;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+.event-paragraph2{
+    width: 85%;
+    margin-left: 30px;
+}
+.link-event{
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto Slab', serif;  
+    
+}
+.link-event:hover{
+    color:rgb(253,126,20) ;
+    text-decoration: none;
+}
+.box-reserve{
+    height: fit-content;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-items: center;
+    
+}
+.mini-box-reserve{
+    width: 80vw;
+    margin:130px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.reserve-paragraph{
+    font-family: "Playfair+Display", times, serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 38px;
+    font-style: normal;
+    width: 500px;
+}
+.reserve-button{
+    width: 180px;
+    @include button();
+    border:none;
+}
+.reserve-button:focus{
+    outline: none;
+}
+.reserve-button:hover{
+    opacity: 0.5;
+}
+footer{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 100px;
+}
+.home-footer-container{
+    height: fit-content;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.home-footer-main{
+    width: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-list1{
+    list-style: none;
+    li{
+        font-size:16px ;
+        font-weight:200 ;
+        font-family:"Mukta Mahee", arial, sans-serif; ;
+        font-style:normal ;
+        margin-bottom: 8px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: -28px;
+        cursor: pointer;
+    }
+    li:hover{
+        color: white;
+    }
+}
+.footer-list2{
+    list-style: none;
+    li{
+        font-size:16px ;
+        font-weight:200 ;
+        font-family:"Mukta Mahee", arial, sans-serif; ;
+        font-style:normal ;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 8px;
+        cursor: pointer;   
+    }
+    li:hover{
+        color: white;
+    }
+}
+.address-footer{
+    color: white;
+    font-size:16px ;
+    font-weight:200 ;
+    font-family:"Mukta Mahee", arial, sans-serif; ;
+    font-style:italic ;
+    i{
+        color: rgb(253,126,20);
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+.address-paragraph{
+    font-size:16px ;
+    font-weight:200 ;
+    font-family:"Mukta Mahee", arial, sans-serif; ;
+    font-style:normal ;
+    color: rgba(255, 255, 255, 0.5);
+    width: 220px;
+    
+}
+.sign-up{
+    font-size:16px ;
+    font-weight:200 ;
+    font-family:"Mukta Mahee", arial, sans-serif; ;
+    font-style:normal ;
+    color: rgba(255, 255, 255, 0.5);
+}
+.input-icons{
+    margin-top: 10px;
+    width: 200px;
+  
+    i{
+        position: absolute;
+        margin-left: 180px;
+        color: white;
+    }
+
+    .input-field{
+        border: none;
+        background-color: black;
+        border-bottom: 1px solid  rgba(145, 131, 131, 0.5) ;
+        width: 100%;
+        outline: none;
+        color: white;
+    }
+    .input-field:hover{
+        border-bottom:1px solid rgb(255, 255, 255);
+    }
+    .input-field:focus{
+        outline: none;
+    }
+    ::placeholder{
+        font-weight: "Mukta Mahee", arial, sans-serif;
+        font-size:16px ;
+        font-weight:400;
+        font-style: italic;
+    }
+}
+.home-footer-main2{
+    width: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 1px solid grey;
+    .footer-end{
+        font-size:16px ;
+        font-weight:200 ;
+        font-family:"Mukta Mahee", arial, sans-serif; ;
+        font-style:normal ;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 40px;
+        .fa{
+            color: rgb(245, 60, 60);
+        }
+        .colorlib{
+          color: rgb(161,177,145) ;
+          font-size:16px ;
+          font-weight:200 ; 
+          font-family:"Mukta Mahee", arial, sans-serif; ;
+          font-style:normal ;
+          transition: 0.5s;
+        } 
+        .colorlib:hover{
+            color: white;
+        } 
+    }
+}
+.footer-icon{
+    margin-top: 40px;
+    a{
+        color: rgb(187,187,187);
+        font-size: 18px;
+        margin-left: 8px; 
+    }
+    a:hover{
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

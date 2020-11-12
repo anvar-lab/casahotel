@@ -1,0 +1,70 @@
+.main-container{
+    background-color: rgb(247, 248, 248); 
+}
+.reservation-header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411) ), url(../../assets/image/img_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.home-title-btn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.home-title{
+    width: 650px;
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-style: italic;   
+}
+.reservation-phone{
+    width: 48%;
+    font-size:14px ;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight:700 ;
+    font-style: normal;
+    color: black;
+    margin-top: 18px;
+}
+.reservation-phone2{
+    width: 48%;
+    font-size:14px ;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight:700 ;
+    font-style: normal;
+    color: black;
+    margin-top: 18px;
+    
+}
+.reservation-email{
+    width: 100%;
+    font-size:14px ;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight:700 ;
+    font-style: normal;
+}
+.reservation-message-box{
+    width: 100%;
+    font-size:14px ;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight:700 ;
+    font-style: normal;
+    margin-top: 18px;
+}
+.reservation-testimonial{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
