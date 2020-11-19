@@ -1,6 +1,4 @@
-.main-container{
-    background-color: rgb(247, 248, 248); 
-}
+//header start
 .events-header{
     width: 100vw;
     height: 100vh;
@@ -11,23 +9,12 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-}
-.home-title-btn{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;   
 }
-.home-title{
-    width: 650px;
-    font-size: 90px;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(255,255,255);
-    font-style: italic;   
-}
+// -header end
+//  event-box-start 
+// event-box-img-start
 .event-main-box{
     width: 80vw;
     height: fit-content;
@@ -54,19 +41,20 @@
 .category-box{
     width: 48%;
     margin-bottom: 20px;
+    padding-bottom: 10px;
     background-color: white;
     box-shadow:1px 1px 8px rgb(224, 219, 219) ;
 }
 .category-box:hover{
     box-shadow: 1px 1px 8px rgba(0, 0,0,  0.228) ;
 }
-
+// event-box-img-end
 .event-mini-box{
     width: 30%;
     display: flex;
     flex-direction: column;
-    
 }
+//event-box-search-start
 .search-box{
     background-color: white;
     height: fit-content;
@@ -105,6 +93,8 @@
     outline: none;
     border: 1px solid black;
 }
+// event-box-search-end
+// event-box-popular-start
 .popular-post{
     width: 100%;
     height: fit-content;
@@ -159,6 +149,8 @@
     font-family: "Playfair+Display", times, serif;
     color: #000000;
 }
+// event-box-popular-end
+// event-box-category-start
 .event-category{
     width: 100%;
     height: fit-content;
@@ -209,4 +201,6 @@
     text-decoration: none;
     color: #c35a02;
 }
+// event-box-category-end
+// event-box-end
 

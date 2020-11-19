@@ -1,6 +1,7 @@
 .main-container{
     background-color: rgb(247, 248, 248); 
 }
+//header start
 .reservation-header{
     width: 100vw;
     height: 100vh;
@@ -11,23 +12,11 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-}
-.home-title-btn{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
-.home-title{
-    width: 650px;
-    font-size: 90px;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(255,255,255);
-    font-style: italic;   
-}
+// -header end
+// form start
 .reservation-phone{
     width: 48%;
     font-size:14px ;
@@ -62,9 +51,12 @@
     font-style: normal;
     margin-top: 18px;
 }
+// form end
+// testimonial start
 .reservation-testimonial{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+// testimonial end
 
 

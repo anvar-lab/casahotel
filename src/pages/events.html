@@ -10,49 +10,51 @@
 </head>
 <body>
     <div class="main-container">
-        <!-----home-header start---->
-        <div class="events-header">
-           <!---home-navbar-start--->
-            <nav class="navbar main-navbar navbar-light bg-transparent">
-                <a class="navbar-brand" href="#">Casahotel
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rooms</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reservation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                    <span class="navbar-text">
-                      Navbar text with an inline element
-                    </span>
-                </div>
-            </nav>
-            <!---home-navbar-start--->
-            <div class="home-title-btn">
-                <div class="home-title">
-                    News & Events 
-                </div>
-            </div>      
+                                <!----navbar-start--->
+        <nav class="navbar main-navbar fixed-top navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                Casahotel
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Navbar text with an inline element
+                </span>
+            </div>
+        </nav>
+                <!----navbar-end--->
+                <!------header start---->
+        <div class="events-header"> 
+            <div class="home-title">  
+                News & Events 
+            </div>        
         </div>
+                    <!------header end--->
+                        <!-- event-box-start -->
         <div class="event-main-box">
+                                <!-- event-box-img-start -->
             <div class="event-box">
                 <div class="event-column-box">
                     <div class="category-box">
@@ -135,13 +137,17 @@
                     </div>
                 </div>                                                                                                                
             </div>
+                                    <!-- event-box-img-end -->
             <div class="event-mini-box">
+                                <!-- event-box-search-start-->
                 <div class="search-box">
                     <div class="search-box-mini">
                         <i class="fa fa-search"></i>
                         <input class="event-search" type="text" name="search" placeholder="Search..">
                     </div>
                 </div>
+                        <!-- event-box-search-end-->
+                        <!-- event-box-popular-start-->
                 <div class="popular-post">
                     <div class="popular-title">
                         Popular Post
@@ -204,6 +210,8 @@
                         </div>
                     </a>
                 </div>
+                            <!-- event-box-popular-end-->
+                            <!-- event-box-category-start-->
                 <div class="event-category">
                     <div class="category-title">
                         Categories
@@ -215,9 +223,11 @@
                         <li><a class="event-list-link" href="#"> Promos <span>(8)</span></a></li>
                     </ul>
                 </div>
+                         <!-- event-box-category-end---->
             </div>
         </div>
-                <!--------home-reserve-start-->
+                <!-- event-box-end -->
+                <!---------reserve-start-->
         <div class="box-reserve">
             <div class="mini-box-reserve">
                 <div class="reserve-paragraph">
@@ -230,8 +240,8 @@
                 </div>
             </div>
         </div>
-                <!--------home-reserve-end-->
-                <!--------home-footer-start-->
+                <!---------reserve-end-->
+                <!---------footer-start-->
         <footer>
             <div class="home-footer-container">
                 <div class="home-footer-main">
@@ -279,10 +289,9 @@
                         </div>
                     </div>
                 </div>
-                        <!-- <div class="home-footer-main2"-->
                 <div class="home-footer-main2">
                     <div class="footer-end">
-                        Copyright ©2020 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <span class="colorlib"> Colorlib</span>
+                        Copyright ©2020 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <span class="colorlib"> Anvar</span>
                     </div>
                     <div class="footer-icon">
                         <a href="#"><i class="fa fa-tripadvisor"></i></a>
@@ -292,7 +301,8 @@
                 </div>
             </div>
         </footer>
-      </div>  
+                <!---------footer-end-->
+    </div>  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

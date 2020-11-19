@@ -1,6 +1,7 @@
 //veraibles
 $title-font-family: 'Roboto Slab', serif;
 $title-font-size: 80px;
+// mixing
 @mixin test-paragraph {
     color:rgb(47,47,47);
     font-size: 20px;
@@ -25,7 +26,7 @@ $title-font-size: 80px;
     font-size: 16px;
     color:#ffffff;
     font-family: "Mukta Mahee", arial, sans-serif;
-    border-radius: 20px;
+    border-radius: 47px;
     height: 47px; 
 }
 @mixin title {
@@ -34,10 +35,8 @@ $title-font-size: 80px;
     font-family:"Playfair+Display", times, serif ; 
     color:#000000 ;
     font-style: normal;
-    line-height: 72px;
 }
-
-
+// mixing-end
 input {
     appearance: none;
     -webkit-appearance: none;
@@ -46,24 +45,18 @@ input {
 .main-container{
     background-color: rgb(247, 248, 248); 
 }
+//header start
 .home-header{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411) ), url(../../assets/image/hotel_interior_furniture_design_hallway_107062_1280x720.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-}
-.home-title-btn{
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 .home-title{
     width: 650px;
@@ -72,6 +65,155 @@ input {
     text-align: center;
     color: rgb(255,255,255);
     font-style: italic;   
+}
+@media (max-width: 1024px){
+    .home-header {
+        width: 100%;
+        .home-title{
+            width: 50%;
+            font-size: 50px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .home-header {
+        width: 100%;
+        .home-title{
+            width: 50%;
+            font-size: 40px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .home-header {
+        width: 100%;
+        .home-title{
+            width: 50%;
+            font-size: 40px;
+        }
+    }
+}
+// -header end
+// home-form-start
+@media screen and (max-width: 1024px){
+    .home-form{
+        width: 100%;
+        
+        .primary-heading{
+            font-size: 40px;
+        }
+        .booking-form{
+            width: 80%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .booking-check{
+            margin: 20px 10px ;
+        }
+        .booking-input{
+            width: 350px;
+            height: 50px;
+            outline: none; 
+            margin: 0;
+            padding: 0;
+        }
+        .mediascreen2{
+            select{
+                width: 160px;
+                height: 50px;
+            }
+            .Home-form-btn{
+                margin: 42px ;
+                width: 300px;
+                height: 50px;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .home-form{
+        width: 100%;
+        .primary-heading{
+            font-size: 40px;
+        }
+        .booking-form{
+            width: 80%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .booking-check{
+            margin: 20px 10px ;
+        }
+        .booking-input{
+            width: 250px;
+            height: 50px;
+            outline: none; 
+            margin: 0;
+            padding: 0;
+        }
+        .mediascreen2{
+            select{
+                width: 100px;
+                height: 50px;
+            }
+            .Home-form-btn{
+                margin: 42px ;
+                width: 220px;
+                height: 50px;
+            }
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .home-form{
+        width: 100%;
+        border: 2px solid rgb(2, 2, 2);
+        .primary-heading{
+            font-size: 40px;
+        }
+        .booking-form{
+            width: 80%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 20px;
+            border: 2px solid rgb(2, 2, 2);
+        }
+        .booking-check{
+            margin: 20px  ;
+        }
+        .booking-input{
+            width: 250px;
+            height: 50px;
+            outline: none; 
+            margin: 0;
+            padding: 0;
+        }
+        .mediascreen{
+            display: flex;
+            flex-direction: column;
+        }
+        .mediascreen2{
+            display: flex;
+            flex-direction: column;
+            select{
+                width: 250px;
+                height: 50px;
+            }
+            .Home-form-btn{
+                width: 220px;
+                height: 50px;
+            }
+        }
+    }
 }
 .home-form{
     width: 100%;
@@ -92,6 +234,14 @@ input {
     box-shadow: 1px 1px 8px rgba(0, 0,0,  0.228) ;
     margin-bottom: 100px;
 }
+.mediascreen{
+    display: flex;
+    flex-direction: row;
+}
+.mediascreen2{
+    display: flex;
+    flex-direction: row;
+}
 .primary-heading{
     margin-top: 100px;
     margin-bottom: 60px;
@@ -103,17 +253,18 @@ input {
     flex-direction: column;
     margin-left: 40px;
     color: rgb(0, 0, 0);
+    font-size: 16px;
     font-weight: 600;
-    font-family: 'Mukta', sans-serif;
-    font-family: 'Roboto Slab', serif;  
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-style: normal; 
 }
 .booking-input{
     background-color: white;
     border: 1.5px solid rgb(197, 197, 197);
     border-radius: 5px;
-    width: 200px;
+    width: 100%;
     height: 50px;
-    outline: none;    
+    outline: none; 
 }
 select{
     background-color: white;
@@ -138,45 +289,79 @@ select{
 .Home-form-btn:focus{
     outline: none;
 }
+// home-form-end
+// home-welcome-con-start
 .home-welcome-con{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-flow: row;
-    background-color:rgb(255, 255, 255) ;
+    background-color:rgb(255, 255, 255) ;  
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+@media screen and ( max-width: 1024px,){
+    .home-welcome-con{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        .welcome-box{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .welcome-title{
+            width: 100%;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+        .welcome-paragraph{
+            width: 100%;
+            font-size: 16px;
+            font-weight: 300;
+            
+        }
+        .welcome-paragraph2{
+            width: 100%;
+            font-size: 16px;
+            font-weight: 200;
+            margin-top: 0;
+        }
+        .welcome-img{
+            width: 80%;
+            margin-top:20px;
+
+        }
+
+    }
     
 }
 .welcome-box{
-    width: 50vw;
-    height: fit-content;
-    display: flex;
-    flex-flow:column;
-    margin-left: 50px;
-    margin-top: 70px;
+    width: 30%;
+    padding-top: 20px;
+    margin-right: 30px;
 }
 .welcome-title{
     @include title();
-    width: 30vw;
+    margin-bottom: 10px;
 }
 .welcome-paragraph{
-    width:30vw;
-    @include paragraph()
+    @include paragraph();
 }
 .welcome-paragraph2{
     color:  rgb(148, 148, 148) ;
     font-size: 16px;
-    width:30vw;
-    line-height: 30px;
-    margin-top: 35px;
 }
 .welcome-buttons{
-    margin-top: 30px;
+     margin-top: 25px;
 }
 .button-read{
     width: 150px;
     border: none;
     transition: 1s;
-    @include button()
+    @include button();
 }
 .button-read:hover{
     opacity: 0.5;
@@ -192,16 +377,36 @@ select{
     color: rgb(161, 141, 109);
     text-decoration: none;
 }
-span{
+.or{
     color: rgb(110, 110, 110);
     margin-left: 10px;
     font-size: 20px;
     font-family: $title-font-family; 
 }
 .welcome-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 40%;
+    margin-bottom: -50px;
+    margin: 0 50px;
+
+}
+.welcome-img2{
+    width: 100%;
+    height: 100%;
+}
+// home-welcome-con-end
+// home-offers-start 
+@media ( max-width: 1024px,){
+    .home-offers{
+        width: 100%;
+        .offers-title{
+            font-size: 40px;
+        }
+        .offers-room{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 .home-offers{
     height: fit-content;
@@ -235,6 +440,12 @@ span{
     margin-left: auto;
     margin-right: auto;
 }
+@media ( max-width: 768px,){
+    .offers-room{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
 .img-offer{
     height: fit-content;
 }
@@ -248,35 +459,46 @@ span{
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px; 
+    display: flex;
+    flex-direction: column;
 }
-.room-title{
-    font-size: 32px;
-    color: black;
-    font-family: "Playfair+Display", times, serif;
-    font-family: 500;
-    line-height: 38px;
+.price{
+    color:#fd7e14;
+    font-size: 56px;
+    font-family: "Mukta Mahee", arial, sans-serif;
     font-style: normal;
-    margin-bottom: 20px;
+    font-weight: 300;
 }
-.offer-cost{
-    color:rgb(253,126,20);
-    font-size: 30px;
+.per-night{
+    color:#6c757d;
+    font-weight: 200;
+    font-size: 16px;
+    margin-left: -4px;
 }
-.room-paragraph{
-    width:33vw;
-    @include paragraph()
+.room-title-gallery{
+    font-size:32px ;
+    font-weight: 500;
+    font-family:"Playfair+Display", times, serif; ;
+    color:#000000 ;
+    margin-top: -28px;
+}
+.paragraph2{
+    @include paragraph();
+    margin-bottom: 18px;
+    
 }
 .room-paragraph2{
-    color:  rgb(148, 148, 148) ;
+    color:  #6c757d ;
     font-size: 16px;
-    width:30vw;
-    line-height: 30px;
+    font-weight: 200;
+    line-height: 29px;;
+    font-style: normal;
+    font-family: "Mukta Mahee", arial, sans-serif;;
 }
 .offer-button{
-    width: 150px;
+    width: 120px;
     border: none;
     transition: 1s;
-    margin-top: 20px;
     @include button()
 }
 .offer-button:focus{
@@ -286,7 +508,7 @@ span{
     opacity: 0.5;
 }
 .main-offer-button{
-    width: 300px;
+    width: 200px;
     border: none;
     transition: 1s;
     margin-left: auto;
@@ -301,17 +523,38 @@ span{
 .main-offer-button:hover{
     opacity: 0.5;
 }
+// home-offers-end
+//home-gallery-start> 
+// home-gallery- img-start
 .home-gallery{
     width: 100vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     align-items: center;
 }
 .galery-title-parag{
     margin:100px 0;
     text-align: center;
+}
+@media ( max-width: 1024px,){
+    .home-gallery{
+        .gallery-title{
+            font-size: 40px;
+        }
+        .testimonial-title{
+            font-size: 40px;
+        }
+        .image-r{
+            width:80vw ;
+            height: 100%;
+            object-fit: cover;
+        }
+        .icon-carousel-pre,.icon-carousel-next{
+           display: none;
+        }
+    }
 }
 .gallery-title{
     width: 490px;
@@ -336,10 +579,23 @@ span{
     margin-left: -120px;
     margin-right: -120px;
 }
+.galery-img-box .galery-img-icons{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid white;
+    background-color:rgb(253, 247, 247) ;
+}
+.galery-img-box .active{
+    opacity: 1;
+    border: 2px solid white;
+    background-color: transparent;
+}
 .gallery-link{
     width: fit-content;
     text-align: center;
-    margin:100px 0;  
+    margin-top: 50px;  
+    margin-bottom: 100px;
 }
 .link-video{
     color: rgb(253,126,20);
@@ -349,10 +605,21 @@ span{
     color: rgb(161, 141, 109);
     text-decoration: none;
 }
+//home-gallery- img-end
+// testimonial-start
 .testimonial-title{
     @include title();
     margin-top: 50px;
     text-align: center;
+}
+.corousel-icons .corousel-icons-circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color:grey ;
+}
+.corousel-icons .active{
+    background-color: rgb(253,126,20) ;
 }
 .testimonial-car-box{
     width: 80vw;
@@ -377,6 +644,23 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media ( max-width: 768px,){
+    .testimonial-car-box{
+        width: 100%;
+        .testimonial-pre,.testimonial-next{
+            display: none;
+        }
+    }
+    .testimonial-parag-img{
+        width: 30%;
+        .testimonial-parag{
+            font-size: 16px;
+            line-height:18px;
+            width: 100%;
+        }
+    }
+    
 }
 .test-img1{
     width: 80px;
@@ -407,6 +691,39 @@ span{
 .testimonial-pre,.testimonial-next{
     margin-right: -50px;
     margin-left: -50px;
+}
+// testimonial-end
+// home-gallery-end
+// home-events-start
+@media ( max-width: 1024px,){
+    .home-events{
+        .event-title{
+            font-size: 40px;
+        }
+    }
+}
+@media ( max-width: 768px,){
+    .home-events{
+        .event-title-paragraph{
+            width: 80%;
+            .event-title{
+                font-size: 40px;
+            }
+        }
+        .event-main-container{
+            .event-date{
+                font-size:15px;
+                margin-left: 10px;
+            }
+            .event-paragraph2{
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+            .link-event{
+                font-size: 15px;
+            }
+        }
+    }
 }
 .home-events{
     width: 100vw;
@@ -453,6 +770,7 @@ span{
     flex-direction: column;
     background-color: white;
     box-shadow:1px 1px 8px rgb(224, 219, 219) ;
+    padding-bottom: 20px;
 }
 .event-gallery-small-con:hover{
     box-shadow: 1px 1px 8px rgba(0, 0,0,  0.228) ;
@@ -487,6 +805,21 @@ span{
 .link-event:hover{
     color:rgb(253,126,20) ;
     text-decoration: none;
+}
+// home-events-end
+// home-reserve-start
+@media ( max-width: 768px,){
+    .box-reserve{
+        width: 100%;
+        .mini-box-reserve{
+            width: 80%;
+            justify-content: space-between;
+            .reserve-paragraph{
+                width: 60%;
+                font-size: 18px;
+            }
+        }
+    }
 }
 .box-reserve{
     height: fit-content;
@@ -525,6 +858,22 @@ span{
 }
 .reserve-button:hover{
     opacity: 0.5;
+}
+// home-reserve-end
+// home-footer-start
+@media ( max-width: 768px,){
+    footer{
+        width: 100%;
+        .home-footer-container{
+            width: 100%;
+            margin: 0 -50px;
+        }
+        .home-footer-main2{
+            .footer-end{
+                font-size: 12px;
+            }
+        }
+    }
 }
 footer{
     width: 100vw;
@@ -680,6 +1029,7 @@ footer{
         color: white;
     }
 }
+// home-footer-end
 
 
 
