@@ -52,6 +52,13 @@ $title-font-size: 80px;
     justify-content: center;
     align-items: center;
 }
+@media(max-width:500px){
+    .room-header{
+        .home-title{
+            font-size: 30px;
+        }
+    }
+}
 // -header end
 // form start
 .contact{
@@ -68,7 +75,6 @@ $title-font-size: 80px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-
 }
 .contact-main-blog{
     border: 1px solid grey;
@@ -77,6 +83,18 @@ $title-font-size: 80px;
     display: flex;
     flex-direction: column;
     padding:50px 38px ;
+}
+@media(max-width:500px){
+    .contact-form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-main-blog{
+        width: 70%;
+    }
 }
 .contact-main-input{
     width: 100%;
@@ -184,10 +202,16 @@ $title-font-size: 80px;
     color: black;
 }
 .contact-mini-blog{
-    width: 32%;
+    width: 32%;width: 32%;
     height: fit-content;
     display: flex;
     flex-direction: column;
+}
+@media(max-width:500px){
+    .contact-mini-blog{
+        width: 70%;
+        margin-top: 20px;
+    }
 }
 .contact-address1{
     font-size:14px ;
@@ -245,5 +269,12 @@ $title-font-size: 80px;
 .contact-testimonial{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+@media(max-width:500px){
+    .contact-testimonial{
+        .testimonial-title{
+            font-size: 30px;
+        }
+    }
 }
 // testimonial end

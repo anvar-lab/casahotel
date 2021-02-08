@@ -15,6 +15,13 @@
     justify-content: center;
     align-items: center;
 }
+@media(max-width:500px){
+    .reservation-header{
+        .home-title{
+            font-size: 30px;
+        }
+    }
+}
 // -header end
 // form start
 .reservation-phone{
@@ -34,7 +41,6 @@
     font-style: normal;
     color: black;
     margin-top: 18px;
-    
 }
 .reservation-email{
     width: 100%;
@@ -57,6 +63,14 @@
     padding-top: 120px;
     padding-bottom: 120px;
 }
+@media(max-width:500px){
+    .reservation-testimonial{
+        .testimonial-title{
+            font-size: 30px;
+        }
+    }
+}
+
 // testimonial end
 
 

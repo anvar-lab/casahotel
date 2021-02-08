@@ -51,6 +51,13 @@
     justify-content: center;
     align-items: center;
 }
+@media(max-width:500px){
+    .rome-header{
+        .home-title{
+            font-size: 30px;
+        }
+    }
+}
 //header end
 // testimonial-start
 .room-testimonial{
@@ -62,6 +69,13 @@
 .room-testimonial-title{
     @include title();
     text-align: center;
+}
+@media(max-width:500px){
+    .room-testimonial{
+        .room-testimonial-title{
+            font-size: 30px;
+        }
+    }
 }
 // testimonial-end
 

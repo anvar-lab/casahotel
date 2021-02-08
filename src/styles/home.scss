@@ -84,12 +84,12 @@ input {
         }
     }
 }
-@media (max-width: 768px){
+@media (max-width: 500px){
     .home-header {
         width: 100%;
         .home-title{
             width: 50%;
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 }
@@ -170,12 +170,11 @@ input {
         }
     }
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:500px){
     .home-form{
         width: 100%;
-        border: 2px solid rgb(2, 2, 2);
         .primary-heading{
-            font-size: 40px;
+            font-size: 30px;
         }
         .booking-form{
             width: 80%;
@@ -185,7 +184,6 @@ input {
             margin-left: auto;
             margin-right: auto;
             padding-bottom: 20px;
-            border: 2px solid rgb(2, 2, 2);
         }
         .booking-check{
             margin: 20px  ;
@@ -338,6 +336,41 @@ select{
     }
     
 }
+@media (max-width:500px){
+    .home-welcome-con{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        .welcome-box{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .welcome-title{
+            width: 100%;
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+        .welcome-paragraph{
+            width: 100%;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 25px;
+        }
+        .welcome-paragraph2{
+            width: 100%;
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 25px;
+            margin-top: 0;
+        }
+        .welcome-img{
+            width: 80%;
+            margin-top:20px;
+        }
+    }
+}
 .welcome-box{
     width: 30%;
     padding-top: 20px;
@@ -402,9 +435,7 @@ select{
             font-size: 40px;
         }
         .offers-room{
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 100%;
         }
     }
 }
@@ -432,6 +463,21 @@ select{
     @include paragraph();
     margin-bottom: 80px;
 }
+@media(max-width:500px){
+    .home-offers{
+        .offers-title{
+            font-size: 30px;
+
+        }
+        .offers-paragraph{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
 .offers-room{
     width: 90vw;
     display: flex;
@@ -442,9 +488,47 @@ select{
 }
 @media ( max-width: 768px,){
     .offers-room{
-        width: 100%;
+        width: 100vw;
         padding-bottom: 10px;
     }
+}
+@media ( max-width: 500px,){
+    .offers-room{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        // align-items: center;
+        .offers-room-cont{
+            margin-top: 0px;
+            margin: 0 20px;
+        }
+        .price{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .per-night{
+            font-size: 12px;
+        }
+        .room-title-gallery{
+            font-size: 20px;
+        }
+        .paragraph2{
+            font-size: 14px;
+            line-height: 25px;
+        }
+        .room-paragraph2{
+            font-size: 14px;
+            line-height: 25px;
+        }
+        .offer-button{
+            width: 100px;
+            height: 35px;
+            font-size: 12px;
+        }
+    }
+   
 }
 .img-offer{
     height: fit-content;
@@ -523,6 +607,12 @@ select{
 .main-offer-button:hover{
     opacity: 0.5;
 }
+@media (max-width:500px){
+    .main-offer-button{
+        width: 150px;
+        font-size: 14px;
+    }
+}
 // home-offers-end
 //home-gallery-start> 
 // home-gallery- img-start
@@ -540,8 +630,38 @@ select{
 }
 @media ( max-width: 1024px,){
     .home-gallery{
+        .galery-title-parag{
+            margin-bottom: 20px;
+        }
         .gallery-title{
             font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .testimonial-title{
+            font-size: 40px;
+        }
+        .image-r{
+            width:80vw ;
+            height: 100%;
+            object-fit: cover;
+        }
+        .icon-carousel-pre,.icon-carousel-next{
+           display: none;
+        }
+    }
+}
+@media ( max-width: 500px,){
+    .home-gallery{
+        .gallery-title{
+            font-size: 30px;
+        }
+        .gallery-paragraph{
+            font-size: 16px;
+            width: 80%;
+            line-height: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            
         }
         .testimonial-title{
             font-size: 40px;
@@ -725,6 +845,33 @@ select{
         }
     }
 }
+@media ( max-width: 500px,){
+    .home-events{
+        .event-title-paragraph{
+            width: 80%;
+            .event-title{
+                font-size: 30px;
+            }
+            .event-paragraph{
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        .event-main-container{
+            .event-date{
+                font-size:15px;
+                margin-left: 10px;
+            }
+            .event-paragraph2{
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+            .link-event{
+                font-size: 15px;
+            }
+        }
+    }
+}
 .home-events{
     width: 100vw;
     height: fit-content;
@@ -772,6 +919,19 @@ select{
     box-shadow:1px 1px 8px rgb(224, 219, 219) ;
     padding-bottom: 20px;
 }
+@media(max-width:500px){
+    .event-gallery-container{
+        .event-gallery-small-con{
+            .event-date{
+                font-size:12px ;
+            }
+            .event-paragraph2{
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
 .event-gallery-small-con:hover{
     box-shadow: 1px 1px 8px rgba(0, 0,0,  0.228) ;
 }
@@ -788,7 +948,6 @@ select{
     color:#ced4da ;
     margin-left: 30px;
     margin-top: 10px;
-    
 }
 .event-paragraph2{
     width: 85%;
@@ -859,6 +1018,24 @@ select{
 .reserve-button:hover{
     opacity: 0.5;
 }
+@media(max-width:500px){
+    .box-reserve{
+        .mini-box-reserve{
+            width: 100%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .reserve-paragraph{
+            font-size: 20px;
+        }
+        .reserve-button{
+            width: 140px;
+            height: 40px;
+            font-size: 15px;
+        }
+    }
+}
 // home-reserve-end
 // home-footer-start
 @media ( max-width: 768px,){
@@ -876,7 +1053,7 @@ select{
     }
 }
 footer{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -884,14 +1061,14 @@ footer{
 }
 .home-footer-container{
     height: fit-content;
-    width: 80vw;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
 }
 .home-footer-main{
-    width: 80vw;
+    width: 80%;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -1027,6 +1204,55 @@ footer{
     }
     a:hover{
         color: white;
+    }
+}
+@media ( max-width: 500px,){
+    footer{
+        width: 100%;
+        padding: 0;
+        .home-footer-container{
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .home-footer-main{
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: none;
+        }
+        .footer-list1{
+            width: 45%;
+        }
+        .footer-list2{
+            width: 45%;
+            li{
+                margin-left: -40px;
+            }
+        }
+        .footer-list3{
+            width: 45%;
+            margin-left: 12px;
+        }
+        .footer-list4{
+            width: 45%;
+        }
+    }
+}
+@media ( max-width: 500px,){
+    .home-footer-main2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .footer-end{
+            font-size: 5px;
+        }
     }
 }
 // home-footer-end
